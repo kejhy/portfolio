@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=800px">
+	<title>guide</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrap">
+	<div class="title">
+		<h2>알쓸필법_3R</h2>
+		<p>
+			알쓸필법_3R의 주제로 디자인 페이지별로 주제에 맞는 일러스트 이미지와
+			<br> 글을 적어 한눈에 알아보기 쉽게 기존에 있던 디자인을 다시 만들었습니다.
+		</p>
+	</div>
+	<div id="cardnews_wrap">
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/카드뉴스2 표지.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/카드뉴스2(2).jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/카드뉴스2(3).jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/카드뉴스2(4).jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/카드뉴스2(5).jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="fixed2">
+		<a href="../index.html#projects" onclick="window.close()"><img src="images/back_1.png" alt="back"></a>
+	</div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			grabCursor: true,
+			effect: "creative",
+			creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: [0, 0, -400],
+				},
+				next: {
+					translate: ["100%", 0, 0],
+				},
+			},
+		});
+	</script>
+
+</body>
+
+</html>
